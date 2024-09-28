@@ -58,3 +58,18 @@ ID_Usuario int,
 constraint FK_VENTAS1 foreign key(ID_Ventas) references Ventas(ID_Ventas),
 constraint FK_USUARIO1 foreign key(ID_Usuario) references USUARIO(ID_Usuario),
 )
+create table COMENTARIOS(
+ID_Comentarios int primary key,
+comentario varchar(max),
+fecha_comentario datetime,
+estado_comentario varchar(10),
+ID_Usuario int,
+constraint FK_USUARIO2 foreign key(ID_Usuario) references USUARIO(ID_Usuario)
+)
+create table COMENTARIOS_USUARIOS(
+ID_Comentarios int,
+ID_Usuario int,
+constraint FK_COMENTARIOS foreign key(ID_Comentarios) references COMENTARIOS(ID_Comentarios),
+constraint FK_USUARIO3 foreign key(ID_Usuario) references USUARIO(ID_Usuario)
+)
+
