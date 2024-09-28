@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Style.css">
 </head>
 <body>
     <header>
-        <div>
-            <h1>Git-Food</h1>
-            <img src="" alt="">
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al usuario</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/">GIT-FOOD</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <nav>  
-            <ul>
-                <li><a href="/Index.html"><h2>Inicio</h2></a></li>
-                <li><a href="/Recetas/Recetas.html"><h2>Recetas</h2></a>
-                <ul>
-                    <li><a href="/Recetas/Entradas/Entradas.html"><h3>Entradas</h3></a></li>
-                    <li><a href="/Recetas/Plato_Fuerte/Plato_Fuerte.html"><h3>Plato Fuerte</h3></a></li>
-                    <li><a href="/Recetas/Guarniciones/Guarniciones.html"><h3>Guarniciones</h3></a></li>
-                    <li><a href="/Recetas/Postres/Postres.html"><h3>Postres</h3></a></li>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="#">Cuchillos</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
                 </ul>
-                </li>
-                <li><a href="/Cuchillos/Cuchillos.html"><h2>Cuchillos</h2></a>
-                    <ul>
-                        <li><a href="/Cuchillos/Cuchillo_De_Chef/Cuchillo_De_Chef.html"><h3>Cuchillo De Chef</h3></a></li>
-                        <li><a href="/Cuchillos/Cuchillo_Filetero/Cuchillo_Filetero.html"><h3>Cuchillo Filetero</h3></a></li>
-                        <li><a href="/Cuchillos/Cuchillo_Verdulero/Cuchillo_Verdulero.html"><h3>Cuchillo Verdulero</h3></a></li>
-                        <li><a href="/Cuchillos/Cuchillo_Para_Pan/Cuchillo_Para_Pan.html"><h3>Cuchillo Para Pan</h3></a></li>
-                    </ul>
-                </li>
-                <li><a href=""><h2>Acerca de</h2></a></li>
-                <li><a href=""><h2>Registro</h2></a></li>
-            </ul>
-        </nav>
-        <hr>
-        <img src="../Imagenes/Imagen_Header.jpg" alt="Img_Main" width="100%">
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
     </header>
     <hr>
     <main>
