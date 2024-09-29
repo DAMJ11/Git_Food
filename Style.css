@@ -236,5 +236,71 @@ html {
 	line-height: 1.2;
 }
 
-/*GLOBALES*/
+/* *************        ************* */
+/*             CATEGORIAS             */
+/* *************        ************* */
+.section-categories{
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	margin-bottom: 100px;
 
+	.header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.btn-all-categories{
+			text-decoration: none;
+			background-color: var(--primary-color);
+			color: black;
+			font-weight: 600;
+			padding: 15px 25px;
+			border-radius: var(--ronded-md);
+		}
+		@media (max-width: 768px){
+			flex-direction: column;
+			gap: 15px;
+
+			.btn-all-categories{
+				display: none;
+			}
+		}
+	}
+	.list-card-categories{
+		display: flex;
+		gap: 30px;
+		align-items: center;
+
+			.card-categori{
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				flex-direction: column;
+				flex: 1;
+
+				padding-bottom: 50px;
+				position: relative;
+				height: 200px;
+				border-radius: var(--rounded-lg);
+				cursor: pointer;
+				box-shadow:0 0 10px rgba(0, 0, 0, 0.2) ;
+
+				img{
+					width: 100%;
+					height: 150px;
+					position: absolute;
+					top: -60px;
+					transition: all .3s ease-in;
+				}
+
+				&:hover img{
+					top: -80px;
+				}
+				p{
+					font-weight: 700;
+					font-size: 18px;
+				}
+			}	
+	}
+}
