@@ -239,16 +239,21 @@ html {
 /* *************        ************* */
 /*             CATEGORIAS             */
 /* *************        ************* */
+:root {
+	--rounded-md: 10px; /* Define el radio de las esquinas */
+  }
 .section-categories{
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
 	margin-bottom: 100px;
+	margin-top: 30px;
 
 	.header{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		font-size: 1.4rem;
 
 		.btn-all-categories{
 			text-decoration: none;
@@ -256,7 +261,7 @@ html {
 			color: black;
 			font-weight: 600;
 			padding: 15px 25px;
-			border-radius: var(--ronded-md);
+			border-radius: var(--rounded-md);
 		}
 		@media (max-width: 768px){
 			flex-direction: column;
@@ -302,5 +307,58 @@ html {
 					font-size: 18px;
 				}
 			}	
+			.entrance{
+				background: radial-gradient(
+					circle,
+					#bfda7115 0%,
+					#dbf11215 100%
+				);
+			}
+			.main-course{
+				background: radial-gradient(
+					circle,
+					#f0161615 0%,
+					#f0aa1315 100%
+				);
+			}
+			.garrison{
+				background: radial-gradient(
+					circle,
+					#0e690215 0%,
+					#08a34915 100%
+				);
+			}
+			.dessert{
+				background: radial-gradient(
+					circle,
+					#946f0b15 0%,
+					#53330915 100%
+				);
+			}
+	}
+	@media (max-width: 768px){
+		gap: 50px;
+		
+		.list-card-categories{
+			overflow-x:auto;
+			scroll-snap-type: x mandatory;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+			padding-top: 60px;
+
+			&::-webkit-scrollbar{
+				display: none;
+			}
+
+			.card-categori{
+				flex: 0 0 60%;
+				scroll-snap-align: center;
+			}
 	}
 }
+}
+/****************  **************/
+/********  SOBRE NOSOTROS *******/
+/****************  **************/
+
