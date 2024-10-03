@@ -361,4 +361,63 @@ html {
 /****************  **************/
 /********  SOBRE NOSOTROS *******/
 /****************  **************/
+.Owner{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+.card{
+	position: relative;
+	width: 20%;
+	height: 500px;
+	margin:  20px;
+}
+.card div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	backface-visibility: hidden;
+	transition: 1s;
+	border-radius: var(--rounded-md);
 
+	h1{
+		font-size: 18px;
+	}
+	.profesion{
+		font-size: 16px;
+		color: #949494;
+		padding: 8px;
+	}
+	img{
+		width: 240px;
+		padding: 15px 20px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	p{
+		justify-content: center;
+		padding: 0 20px;
+		font-size: 12px;
+		text-align: center;
+		line-height: 22px;
+	}
+}
+
+.card .front{
+	background:#346ea315 100%;
+                
+	transform: perspective(500px) rotateY(0deg);
+}
+.card .back{
+	background: #848dbe;
+	transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .front{
+	transform: perspective(500px) rotateY(180deg);
+
+}.card:hover .back{
+	transform: perspective(500px) rotateY(360deg);
+}
