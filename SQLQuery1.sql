@@ -36,7 +36,10 @@ create table VENTAS(
 ID_Ventas int primary key,
 Nombre_Producto varchar(25),
 Cantidad_productos smallint,
+ID_Usuario int
+CONSTRAINT FK_VENTAS_USUARIO FOREIGN KEY (ID_USUARIO) REFERENCES USUARIO (ID_USUARIO)
 )
+
 create table RECETAS_USUARIO(
 Id_Recetas int,
 ID_Usuario int,
@@ -49,15 +52,9 @@ ID_Cuchillo int,
 constraint FK_VENTAS foreign key(ID_Ventas) references VENTAS(ID_Ventas),
 constraint FK_CUCHILLOS foreign key(ID_Cuchillo) references CUCHILLOS(ID_Cuchillo)
 )
-create table VENTAS_USUARIO(
-ID_Ventas int,
-ID_Usuario int,
-constraint FK_VENTAS1 foreign key(ID_Ventas) references Ventas(ID_Ventas),
-constraint FK_USUARIO1 foreign key(ID_Usuario) references USUARIO(ID_Usuario),
-)
+
 create table COMENTARIOS(
 ID_Comentarios int primary key,
-
 estado_comentario varchar(10),
 ID_Usuario int,
 constraint FK_USUARIO2 foreign key(ID_Usuario) references USUARIO(ID_Usuario)
