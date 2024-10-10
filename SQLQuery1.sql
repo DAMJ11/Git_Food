@@ -105,3 +105,16 @@ INSERT INTO COMENTARIOS (ID_Comentarios, estado_comentario, ID_Usuario) VALUES
 (17, 'Inactivo', 8),
 (18, 'Activo', 9),
 (19, 'Inactivo', 10);
+
+select *from RECETAS_USUARIO
+INSERT INTO RECETAS_USUARIO(Id_Recetas,ID_Usuario) VALUES
+(001,100),
+(002,200),
+(004,300),
+(005,400),
+(007,500),
+(009,600),
+(0011,700),
+(0012,800),
+(0014,900),
+(0016,1000);
