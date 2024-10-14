@@ -447,10 +447,32 @@ html {
 	background-image: no-repeat;
 	background-size: cover;
 
+	
+	.abeas{
+		padding: 50px;
+		margin: 25px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		border-radius: 15px;
+		background-color: #EEEEEE;
+		background-repeat: no-repeat;
+		background-image: url(./Imagenes/Abeas.jpg);
+		background-size: 100% 100%;
+		text-align: center;
+		height: 60%;
+		width: 400px;
+		
+		p{
+			font-size: 20px;
+			color: #EEEEEE;
+			text-shadow: 2px 2px 4px #270e0e;
+		}
+	}
 	form{
 		padding: 50px;
+		margin: 25px;
 		display: flex;
 		flex-direction: column;
+		height: 60%;
 		width: 400px;
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 		border-radius: 15px;
