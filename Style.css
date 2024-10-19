@@ -291,6 +291,11 @@ html {
 				cursor: pointer;
 				box-shadow:0 0 10px rgba(0, 0, 0, 0.2) ;
 
+				a{
+					text-decoration: none;
+					color: #fff;
+				}
+
 				img{
 					width: 100%;
 					height: 150px;
@@ -376,11 +381,12 @@ html {
 .Owner{
 	display: flex;
 	flex-direction: row;
-	justify-content:center;
+	justify-content: center;
+	width: 100%;
 }
 .card{
 	position: relative;
-	width: 20%;
+	width: 350px;
 	height: 500px;
 	margin:  20px;
 }
@@ -417,10 +423,8 @@ html {
 		line-height: 22px;
 	}
 }
-
 .card .front{
-	background:#346ea315 	 100%;
-                
+	background:#346ea315 100%;
 	transform: perspective(500px) rotateY(0deg);
 }
 .card .back{
@@ -433,6 +437,23 @@ html {
 }.card:hover .back{
 	transform: perspective(500px) rotateY(360deg);
 }
+@media (max-width: 768px){
+		&::-webkit-scrollbar{
+			display: none;
+		}
+		
+		.cont{
+			overflow-x:auto;
+			scroll-snap-type: x mandatory;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+			padding-top: 60px;
+			scroll-snap-align: center;
+		}
+	
+}
+
 /****************  **************/
 /********    REGISTRO	  *******/
 /****************  **************/
@@ -517,9 +538,13 @@ html {
 		margin-bottom: 25px;
 	}
 
-	@media(max-width:991px){
+	@media(max-width:798px){
 		body{
 			padding: 30px;
+		}
+
+		.register{
+			
 		}
 
 		form{
@@ -527,17 +552,9 @@ html {
 		}
 	}
 }
-footer{
-	display: flex;
-	
-	h3{
-		font-family:Helvetica, sans-serif;
-		font-size: 18px;
-	}
-}
-/************************/
-/********FOOTER**********/
-/************************/
+/**********************************/
+/********     FOOTER     **********/
+/**********************************/
 .footer {
 	position: relative;
 	width: 100%;
