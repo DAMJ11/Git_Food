@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Style.css">
+    <link rel="stylesheet" href="./Entradas.css">
 </head>
 <body>
     <header>
@@ -54,99 +54,38 @@
             </nav>
         </div>
     </header>
-    <hr>
-    <main>
-        <section><!--Tarjetas Recetas-->
-            <table width="100%" height="800px">
-                <tr>
-                    <th>Bruschetta de Tomate y Albahaca
-                        <br>
-                        <img src="/Imagenes/Bruschetta_de_Tomate_y_Albahaca.jpg" alt="Brouchetta de tomate" width="50%" >
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>1 baguette</li>
-                            <li>2 tazas de tomates cherry, picados</li>
-                            <li>1 diente de ajo, picado</li>
-                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
-                            <li>3 cucharadas de aceite de oliva</li>
-                            <li>Sal y pimienta al gusto</li>
-                        </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Precalienta el horno a 200°C.</li>
-                            <li>Corta la baguette en rebanadas y tuéstalas en el horno durante 5-7 minutos.</li>
-                            <li>En un bol, mezcla los tomates, ajo, albahaca, aceite de oliva, sal y pimienta.</li>
-                            <li>Coloca la mezcla sobre las rebanadas de baguette tostadas y sirve.</li>
-                        </ol>
-                    </th>
-                    <th>Guacamole
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Guacamole.jpg" alt="GUACAMOLE" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>2 aguacates</li>
-                            <li>1 tomate</li>
-                            <li>1/2 cebolla</li>
-                            <li>Jugo de 1 limón</li>
-                            <li>Sal al gusto</li>
-                        </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Machaca los aguacates y mezcla con los demás ingredientes.</li>
-                            <li>Sirve con totopos o galletas saladas.</li>
-                        </ol>
-                    </th>
-                    <th>Rollitos de Jamón y Queso
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/ROLLO_JAMON_Y_QUEZO.jpg" alt="ROLLO_JAMON_QUEZO" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>Lonchas de jamón</li>
-                            <li>Lonchas de queso</li>
-                            <li>Ensalada (opcional)</li>
-                        </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Enrolla las lonchas de jamón con queso y, si lo deseas, añade ensalada en el interior.</li>
-                            <li>Asegura con un palillo.</li>
-                        </ol>
-                    </th>
-                    <th>Hummus Clásico
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Hummus_Clásico.jpg" alt="HUMMUS_CLASICO" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>1 lata de garbanzos</li>
-                            <li>2 cucharadas de tahini</li>
-                            <li>Jugo de 1 limón</li>
-                            <li>2 dientes de ajo</li>
-                            <li>Aceite de oliva y sal al gusto</li>
-                        </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Mezcla todos los ingredientes en un procesador hasta obtener una mezcla suave.</li>
-                            <li>Sirve con pan pita o vegetales.</li>
-                        </ol>
-                    </th>
-                </tr>
-            </table>
-        </section>
-    </main>
-    <hr>
-    <footer>
-        <div>
-            <h3>GIT-FOOD</h3>
-            <p>Explora recetas tradicionales y modernas que celebran la diversidad culinaria. 
-                    Comparte momentos especiales alrededor de la mesa con nuestras deliciosas propuestas.</p>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
+    <div class="card-cat">
+        <div class="card_landing" style="--i: url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+            <h6>Bruschetta de Tomate y Albahaca</h6>
         </div>
-        <div>
-            <p>© 2023 GIT-FOOD. Todos los derechos reservados.</p>
+        <div class="card_info">
+            <p class="title">Bruschetta de Tomate y Albahaca</p>
+            <div class="description">
+                <div class="item">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>40 Min</p>
+                </div>
+                <div class="item">
+                    <i class="fa-regular fa-user"></i>
+                    <p>4</p>
+                </div>
+            </div>
+            <div class="content">
+                <p class="title">Ingredientes:</p>
+                <ul class="list">
+                    <li>1 baguette</li>
+                    <li>2 tazas de tomates cherry, picados</li>
+                    <li>1 diente de ajo, picado</li>
+                    <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                    <li>3 cucharadas de aceite de oliva</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+            </div>
+            <div class="action">
+                <a href="#" class="btn">Ver Receta</a>
+            </div>
         </div>
-    </footer>
+    </div>
+    
 </body>
 </html>
