@@ -230,7 +230,7 @@ html {
 }
 
 .content-banner h2 {
-	color: #fff;
+	color: #ffffff;
 	font-size: 3.5rem;
 	font-weight: 500;
 	line-height: 1.2;
@@ -246,7 +246,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	margin-top: 30px;
 
 	.header{
@@ -293,7 +293,7 @@ html {
 
 				a{
 					text-decoration: none;
-					color: #fff;
+					color: #000;
 				}
 
 				img{
@@ -381,14 +381,28 @@ html {
 .Owner{
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	height: 800px;
+	width: 100%;
+}
+.cont{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	justify-content: center;
 	width: 100%;
+	overflow-x: auto;
+	height: 100%;
 }
 .card{
 	position: relative;
 	width: 350px;
 	height: 500px;
-	margin:  20px;
+	margin:  20px ;
+	flex: 0 0 350px;
+	box-sizing: border-box;
 }
 .card div{
 	position: absolute;
@@ -400,6 +414,7 @@ html {
 	backface-visibility: hidden;
 	transition: 1s;
 	border-radius: var(--rounded-md);
+	box-sizing: border-box;
 
 	h1{
 		font-size: 18px;
@@ -438,81 +453,71 @@ html {
 	transform: perspective(500px) rotateY(360deg);
 }
 @media (max-width: 768px){
-		&::-webkit-scrollbar{
-			display: none;
-		}
-		
-		.cont{
-			overflow-x:auto;
-			scroll-snap-type: x mandatory;
-			-webkit-overflow-scrolling: touch;
-			scrollbar-width: none;
-			-ms-overflow-style: none;
-			padding-top: 60px;
-			scroll-snap-align: center;
-		}
-	
+	.cont {
+        overflow-x: auto; /* Añadir para permitir desplazamiento horizontal */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Para Firefox */
+        padding-top: 60px;
+    }
+    .cont::-webkit-scrollbar {
+        display: none; /* Ocultar el scrollbar en webkit */
+    }
+    .card {
+        scroll-snap-align: center; /* Asegurar que las tarjetas se alineen en el centro */
+    
 }
-
+}
 /****************  **************/
 /********    REGISTRO	  *******/
 /****************  **************/
-.register{
-	font-family: Helvetica Neue, sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	background-image: url();
-	background-position: center center;
-	background-image: no-repeat;
-	background-size: cover;
+.register {
+    font-family: Helvetica Neue, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-	
-	.abeas{
+	.abeas, form {
 		padding: 50px;
 		margin: 25px;
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 		border-radius: 15px;
 		background-color: #EEEEEE;
-		background-repeat: no-repeat;
-		background-image: url(./Imagenes/Abeas.jpg);
-		background-size: 100% 100%;
+		background-size: cover;
 		text-align: center;
-		height: 60%;
-		width: 400px;
-		
-		p{
-			font-size: 20px;
-			color: #EEEEEE;
-			text-shadow: 2px 2px 4px #270e0e;
-		}
+		min-width: 350px; /* Asegurar un tamaño mínimo */
+		flex: 0 0 350px; /* Asegurar tamaño fijo para cada tarjeta */
 	}
-	form{
-		padding: 50px;
-		margin: 25px;
+	.abeas {
+		background-image: url(./Imagenes/Abeas.jpg);
+	}
+	.abeas p {
+		font-size: 20px;
+		color: #EEEEEE;
+		text-shadow: 2px 2px 4px #270e0e;
+	}
+	form {
 		display: flex;
 		flex-direction: column;
-		height: 60%;
-		width: 400px;
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-		border-radius: 15px;
-		background-color: #EEEEEE;
-	
-		h2{
-			text-align: center;
-			font-size: 30px;
-			text-transform: uppercase;
-			color: #2E2E2E;
-			margin-bottom: 25px;
-		}
 	}
-	label, p{
+	form h2 {
+		text-align: center;
+		font-size: 30px;
+		text-transform: uppercase;
+		color: #2E2E2E;
+		margin-bottom: 25px;
+	}
+	form label,
+	form p {
 		font-size: 17px;
 		color: #575757;
 		margin-bottom: 10px;
 	}
-	input{
+	form input {
 		padding: 17px 11px;
 		border: 1px solid #00ADEF;
 		border-radius: 25px;
@@ -522,35 +527,59 @@ html {
 		color: #00ADEF;
 		font-size: 16px;
 	}
-	.btn-1{
+	.btn-1 {
 		background-color: #00ADEF;
 		font-size: 15px;
 		color: #FFFFFF;
 		text-transform: uppercase;
 		cursor: pointer;
 	}
-	.btn-1:hover{
-		background-color: #00ADEF;
+	.btn-1:hover {
+		background-color: #0096d6;
 	}
-	.remember{
+	.remember {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 25px;
 	}
-
-	@media(max-width:798px){
-		body{
-			padding: 30px;
-		}
-
-		.register{
-			
-		}
-
-		form{
-			width: 100%;
-		}
+}
+.cont_register {
+    display: flex;
+    flex-wrap: nowrap; /* No permite que las tarjetas se envuelvan */
+	justify-content: center;
+    width: 100%;
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+	
+	input{
+		padding: 18px 11px;
+		border: 1px solid #00ADEF;
+		border-radius: 25px;
+		margin: 25px;
+		background-color: #FAFAFC;
+		outline: none;
+		color: #00ADEF;
+		font-size: 16px;
 	}
+}
+
+@media (max-width: 768px) {
+    .cont_register {
+        display: flex;
+        flex-direction: row; /* Mantener filas horizontales en el contenedor */
+		justify-content: center;
+        overflow-x: auto; /* Permitir desplazamiento horizontal */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .cont_register::-webkit-scrollbar {
+        display: none; /* Ocultar el scrollbar en webkit */
+    }
+    .abeas, form {
+        width: 100%;
+        max-width: 300px;
+        flex: 0 0 300px; /* Mantener tamaño fijo en responsive */
+        scroll-snap-align: center; /* Asegurar que se alinee en el centro al desplazarse */
+    }
 }
 /**********************************/
 /********     FOOTER     **********/
@@ -565,46 +594,54 @@ html {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-  }
+
+	.text {
+		color: white;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+}
   
-  .social-icon {
+.social-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	margin: 10px 5px;
 	flex-wrap: wrap;
-  }
+}
   
-  .icon-elem {
+.icon-elem {
 	list-style: none;
-  }
+}
   
-  .icon {
+.icon {
 	color: white;
 	font-size: 32px;
 	display: inline-block;
 	margin: 0 10px;
 	transition: 0.5s;
-  }
+}
   
-  .icon:hover {
+.icon:hover {
 	transform: translateY(-10px);
-  }
+}
   
-  .menu {
+.menu {
 	display: flex;
 	justify-content: center;
 	position: relative;
 	align-items: center;
 	margin: 10px 0;
 	flex-wrap: wrap;
-  }
+}
   
-  .menu-elem {
+.menu-elem {
 	list-style: none;
-  }
-  .menu-icon {
+}
+.menu-icon {
 	color: white;
 	font-size: 20px;
 	display: inline-block;
@@ -612,16 +649,10 @@ html {
 	margin: 5px 10px;
 	opacity: 0.5;
 	transition: 0.3s;
-  }
+}
   
-  .menu-icon:hover {
+.menu-icon:hover {
 	opacity: 1;
-  }
+}
   
-  .text {
-	color: white;
-	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	font-size: 20px;
-  }
+
