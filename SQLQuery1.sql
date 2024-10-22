@@ -118,3 +118,8 @@ INSERT INTO RECETAS_USUARIO(Id_Recetas,ID_Usuario) VALUES
 (0012,800),
 (0014,900),
 (0016,1000);
+
+select * from CUCHILLOS
+insert into CUCHILLOS (ID_Cuchillo,Nombre_Cuchillo,Descripcion_Cuchillo,Tipo_Cuchillo,Material_Hoja,Material_Mango,Longitud_Hoja,Peso_cuchillo,Precio_Cuchillo,Marca_Cuchillo) values
+(001,'Cuchillo de chef multiusos','Cuchillo de chef de 8 in de acero inoxid','cuchillo de chef','acero inoxidable','madera de Pakka',25,69,179.260,'imarku'),
+(002,'Paudin Cuchillo de chef','Paudin Cuchillo de chef de acero inoxid','cuchillo de chef','acero inoxidable','madera',25,69,143399,'paudin'),
