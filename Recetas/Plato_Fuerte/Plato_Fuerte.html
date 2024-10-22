@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Style.css">
+    <link rel="stylesheet" href="/Recetas/Recetas.css">
 </head>
 <body>
     <header>
         <div class="container-hero">
             <div class="container hero">
                 <div class="customer-support">
-                    <i class="fa-solid fa-headset"></i>
+                    <!--<i class="fa-solid fa-headset"></i>
                     <div class="content-customer-support">
                         <span class="text">Soporte al usuario</span>
-                    </div>
+                    </div>-->
                 </div>
 
                 <div class="container-logo">
                     <i class="fa-solid fa-mug-hot"></i>
-                    <h1 class="logo"><a href="/">GIT-FOOD</a></h1>
+                    <h1 class="logo"><a href="/Index.html">GIT-FOOD</a></h1>
                 </div>
 
                 <div class="container-user">
                     <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-basket-shopping"></i>
+                    <!--<i class="fa-solid fa-basket-shopping"></i>
                     <div class="content-shopping-cart">
                         <span class="text">Carrito</span>
                         <span class="number">(0)</span>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -40,9 +40,7 @@
                 <i class="fa-solid fa-bars"></i>
                 <ul class="menu">
                     <li><a href="/Index.html">Inicio</a></li>
-                    <li><a href="#">Recetas</a></li>
-                    <li><a href="#">Cuchillos</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="/Recetas/Recetas.html">Recetas</a></li>
                 </ul>
 
                 <form class="search-form">
@@ -54,98 +52,213 @@
             </nav>
         </div>
     </header>
-    <hr>
+    <section class="banner">
+        <div class="content-banner">
+            <p>Recetas Deliciosas</p>
+            <h2>Creadas <br/>Para Deleitar</h2>
+        </div>
+    </section>
+    <br>
     <main>
-        <section><!--Tarjetas Recetas-->
-            <table width="100%" height="800px">
-                <tr>
-                    <th>Pollo Al Limón
-                        <br>
-                        <img src="./Imagenes/Pollo_Al_Limon.jpg" alt="Pollo al limon" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>4 pechugas de pollo</li>
-                            <li>2 limones (su jugo)</li>
+        <h1>NUESTROS PLATOS MAS FUERTES</h1>
+        <section class="cont-cat">
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <a href="/Recetas/Plato_Fuerte/Plato_Fuerte.html"><h6>Pollo Al Limón</h6></a>
+                    <img src="/Recetas/Imagenes_Recetas/Pollo_Al_Limon.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Pollo Al Limón</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
                             <li>3 cucharadas de aceite de oliva</li>
-                            <li>2 dientes de ajo, picados</li>
                             <li>Sal y pimienta al gusto</li>
-                            <li>Perejil fresco (opcional, para decorar)</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Marinar el pollo con el jugo de limón, aceite de oliva, ajo, sal y pimienta durante 30 minutos.</li>
-                            <li>Calentar una sartén a fuego medio y cocinar el pollo durante 6-7 minutos por cada lado, o hasta que esté dorado y cocido.</li>
-                            <li>Decorar con perejil fresco y servir.</li>
-                        </ol>
-                    </th>
-                    <th>Spaghetti a la Boloñesa
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Spaghetti_a_la_Boloñesa.jpg" alt="SPAGHETTI_BOLOÑESA" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>400 g de espaguetis</li>
-                            <li>300 g de carne molida</li>
-                            <li>1 lata de tomate triturado</li>
-                            <li>Cebolla, ajo, y especias al gusto</li>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <h6>Spaghetti a la Boloñesa</h6>
+                    <img src="/Recetas/Imagenes_Recetas/Spaghetti_a_la_Boloñesa.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Spaghetti a la Boloñesa</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                            <li>3 cucharadas de aceite de oliva</li>
+                            <li>Sal y pimienta al gusto</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Cocina los espaguetis según las instrucciones.</li>
-                            <li>Sofríe cebolla y ajo, añade carne y tomate. Cocina a fuego lento.</li>
-                            <li>Mezcla con los espaguetis y sirve.</li>
-                        </ol>
-                    </th>
-                    <th>Tacos de Pescado
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Tacos_de_Pescado.jpg" alt="TACO_PESCADO" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>Filetes de pescado</li>
-                            <li>Tortillas</li>
-                            <li>Repollo</li>
-                            <li>Salsa de yogur</li>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <h6>Tacos de Pescado</h6>
+                    <img src="/Recetas/Imagenes_Recetas/Tacos_de_Pescado.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Tacos de Pescado</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                            <li>3 cucharadas de aceite de oliva</li>
+                            <li>Sal y pimienta al gusto</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Cocina el pescado a la parrilla.</li>
-                            <li>Sirve en tortillas con repollo y salsa de yogur.</li>
-                        </ol>
-                    </th>
-                    <th>Lentejas Estofadas
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Lentejas_Estofadas.jpg" alt="LENTEJAS_ESTOFADAS" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>1 taza de lentejas</li>
-                            <li>1 zanahoria</li>
-                            <li>1 cebolla</li>
-                            <li>Caldo de verduras</li>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <h6>Lentejas Estofadas</h6>
+                    <img src="/Recetas/Imagenes_Recetas/Lentejas_Estofadas.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Lentejas Estofadas</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                            <li>3 cucharadas de aceite de oliva</li>
+                            <li>Sal y pimienta al gusto</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Sofríe cebolla y zanahoria picada.</li>
-                            <li>Añade lentejas y caldo. Cocina a fuego lento hasta que estén tiernas.</li>
-                        </ol>
-                    </th>
-                </tr>
-            </table>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <hr>
-    <footer>
-        <div>
-            <h3>GIT-FOOD</h3>
-            <p>Explora recetas tradicionales y modernas que celebran la diversidad culinaria. 
-                    Comparte momentos especiales alrededor de la mesa con nuestras deliciosas propuestas.</p>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>© 2023 GIT-FOOD. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    </section>
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Inicio </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Equipo </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Contacto </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Video </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Sobre Nosotros </a>
+          </li>
+        </ul>
+        <p class="text">2024 | Git-Food Todos los derechos reservados</p>
+      </footer>
 </body>
 </html>

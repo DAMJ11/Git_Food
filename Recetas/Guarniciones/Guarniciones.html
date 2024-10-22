@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entradas</title>
+    <title>GUARNICIONES</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Style.css">
+    <link rel="stylesheet" href="/Recetas/Recetas.css">
 </head>
 <body>
     <header>
         <div class="container-hero">
             <div class="container hero">
                 <div class="customer-support">
-                    <i class="fa-solid fa-headset"></i>
+                    <!--<i class="fa-solid fa-headset"></i>
                     <div class="content-customer-support">
                         <span class="text">Soporte al usuario</span>
-                    </div>
+                    </div>-->
                 </div>
 
                 <div class="container-logo">
@@ -27,11 +27,11 @@
 
                 <div class="container-user">
                     <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-basket-shopping"></i>
+                    <!--<i class="fa-solid fa-basket-shopping"></i>
                     <div class="content-shopping-cart">
                         <span class="text">Carrito</span>
                         <span class="number">(0)</span>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -39,10 +39,8 @@
             <nav class="navbar container">
                 <i class="fa-solid fa-bars"></i>
                 <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Recetas</a></li>
-                    <li><a href="#">Cuchillos</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="/Index.html">Inicio</a></li>
+                    <li><a href="/Recetas/Recetas.html">Recetas</a></li>
                 </ul>
 
                 <form class="search-form">
@@ -54,91 +52,212 @@
             </nav>
         </div>
     </header>
-    <hr>
+    <section class="banner">
+        <div class="content-banner">
+            <p>Recetas Deliciosas</p>
+            <h2>Creadas <br/>Para Deleitar</h2>
+        </div>
+    </section>
+    <br>
     <main>
-        <section><!--Tarjetas Recetas-->
-            <table width="100%" height="800px">
-                <tr>
-                    <th> Puré de Papas
-                        <br>
-                        <img src="./Imagenes/Puré_de_Papas.jpg" alt=" Puré de Papas" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>1 kg de papas</li>
-                            <li>100 g de mantequilla</li>
-                            <li>1/2 taza de leche</li>
+        <h1>LAS GUARNICIONES DEL MOMENTO</h1>
+        <section class="cont-cat">
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <a href="/Recetas/Guarniciones/Guarniciones.html"><h6>Puré de Papas</h6></a>
+                    <img src="/Recetas/Imagenes_Recetas/Puré_de_Papas.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Puré de Papas</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                            <li>3 cucharadas de aceite de oliva</li>
                             <li>Sal y pimienta al gusto</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Pelar y cortar las papas en trozos. Cocinar en agua hirviendo con sal durante 15-20 minutos o hasta que estén tiernas.</li>
-                            <li>Escurrir las papas y hacer un puré con un pisa-papas.</li>
-                            <li>Agregar la mantequilla, leche, sal y pimienta. Mezclar bien hasta obtener una textura cremosa.</li>
-                        </ol>
-                    </th>
-                    <th>Ensalada César
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Ensalada_César.jpg" alt="ENSALADA_CÉSAR" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>Lechuga romana</li>
-                            <li>Crutones</li>
-                            <li>Queso parmesano</li>
-                            <li>Aderezo César</li>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <h6>Ensalada César</h6>
+                    <img src="/Recetas/Imagenes_Recetas/Ensalada_César.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Ensalada César</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                            <li>3 cucharadas de aceite de oliva</li>
+                            <li>Sal y pimienta al gusto</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Mezcla todos los ingredientes en un tazón y sirve.</li>
-                        </ol>
-                    </th>
-                    <th>Arroz Pilaf
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Arroz_Pilaf.jpg" alt=" Puré de Papas" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>1 taza de arroz</li>
-                            <li>2 tazas de caldo</li>
-                            <li>Cebolla picada</li>
-                            <li>Mantequilla</li>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <h6>Vegetales Asados</h6>
+                    <img src="/Recetas/Imagenes_Recetas/Vegetales_Asados.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Vegetales Asados</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                            <li>3 cucharadas de aceite de oliva</li>
+                            <li>Sal y pimienta al gusto</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Sofríe la cebolla en mantequilla, añade el arroz y luego el caldo. Cocina hasta que el arroz esté tierno.</li>
-                        </ol>
-                    </th>
-                    <th>Vegetales Asados
-                        <br>
-                        <img src="/Recetas/Imagenes_Recetas/Vegetales_Asados.jpg" alt="VEGETALES_ASADOS" width="50%">
-                        <ul> 
-                            <h2>Ingredientes:</h2>
-                            <li>Zanahorias, pimientos, calabacines</li>
-                            <li>Aceite de oliva</li>
-                            <li>Sal y pimienta</li>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_landing" style="--i:url(Bruschetta_de_Tomate_y_Albahaca.jpg)">
+                    <h6>Arroz Pilaf</h6>
+                    <img src="/Recetas/Imagenes_Recetas/Arroz_Pilaf.jpg" alt="">
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Arroz Pilaf</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 baguette</li>
+                            <li>2 tazas de tomates cherry, picados</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>1/4 taza de hojas de albahaca fresca, picadas</li>
+                            <li>3 cucharadas de aceite de oliva</li>
+                            <li>Sal y pimienta al gusto</li>
                         </ul>
-                        <ol> 
-                            <h2>Instrucciones:</h2>
-                            <li>Corta los vegetales, mezcla con aceite, sal y pimienta, y asa en el horno a 200°C durante 20 minutos.</li>
-                        </ol>
-                    </th>
-                </tr>
-            </table>
+                    </div>
+    
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <hr>
-    <footer>
-        <div>
-            <h3>GIT-FOOD</h3>
-            <p>Explora recetas tradicionales y modernas que celebran la diversidad culinaria. 
-                    Comparte momentos especiales alrededor de la mesa con nuestras deliciosas propuestas.</p>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>© 2023 GIT-FOOD. Todos los derechos reservados.</p>
-        </div>
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Inicio </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Equipo </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Contacto </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Video </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Sobre Nosotros </a>
+          </li>
+        </ul>
+        <p class="text">2024 | Git-Food Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
