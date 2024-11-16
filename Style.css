@@ -34,174 +34,183 @@ html {
 /* ********************************** */
 /*               HEADER               */
 /* ********************************** */
-.container-hero {
-	background-color: var(--background-color);
-}
-
-.hero {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2rem 0;
-}
-
-.customer-support {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-}
-
-.customer-support i {
-	font-size: 3.3rem;
-}
-
-.content-customer-support {
-	display: flex;
-	flex-direction: column;
-}
-
-.container-logo {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-}
-
-.container-logo i {
-	font-size: 3rem;
-}
-
-.container-logo h1 a {
-	text-decoration: none;
-	color: #000;
-	font-size: 3rem;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-}
-
-.container-user {
-	display: flex;
-	gap: 1rem;
-	cursor: pointer;
-}
-
-.container-user .fa-user {
-	font-size: 3rem;
-	color: var(--primary-color);
-	padding-right: 2.5rem;
-	border-right: 1px solid #e2e2e2;
-}
-
-.container-user .fa-basket-shopping {
-	font-size: 3rem;
-	color: var(--primary-color);
-	padding-left: 1rem;
-}
-
-.content-shopping-cart {
-	display: flex;
-	flex-direction: column;
-}
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+.container-hero {
+    background-color: var(--background-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer-support {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customer-support i {
+    font-size: 3.3rem;
+}
+
+.content-customer-support {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-logo i {
+    font-size: 3rem;
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.container-user {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container-user .fa-user {
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding-right: 2.5rem;
+    border-right: 1px solid #e2e2e2;
+}
+
+.container-user .fa-basket-shopping {
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding-left: 1rem;
+}
+
+.content-shopping-cart {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 /* *************        ************* */
 /*               NAVBAR               */
 /* *************        ************* */
 .container-navbar {
-	background-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 .navbar .fa-bars {
-	display: none;
+    display: none;
 }
 
 .menu {
-	display: flex;
-	gap: 2rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .menu li {
-	list-style: none;
+    list-style: none;
 }
 
 .menu a {
-	text-decoration: none;
-	font-size: 1.3rem;
-	color: var(--dark-color);
-	font-weight: 600;
-	text-transform: uppercase;
-	position: relative;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
 }
 
 .menu a::after {
-	content: '';
-	width: 1.5rem;
-	height: 1px;
-	background-color: #fff;
-	position: absolute;
-	bottom: -3px;
-	left: 50%;
-	transform: translate(-50%, 50%);
-	opacity: 0;
-	transition: all 0.3s ease;
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .menu a:hover::after {
-	opacity: 1;
+    opacity: 1;
 }
 
 .menu a:hover {
-	color: #fff;
+    color: #fff;
 }
 
+/* Estilos del formulario de búsqueda */
 .search-form {
-	position: relative;
-	display: flex;
-	align-items: center;
-	border: 2px solid #fff;
-	border-radius: 2rem;
-	background-color: #fff;
-	height: 4.4rem;
-	overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: #fff;
+    height: 3rem; /* Ajuste de altura */
+    overflow: hidden;
 }
 
 .search-form input {
-	outline: none;
-	font-family: inherit;
-	border: none;
-	width: 25rem;
-	font-size: 1.4rem;
-	padding: 0 2rem;
-	color: #777;
-	cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 20rem;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    color: #777;
+    cursor: pointer;
 }
 
 .search-form input::-webkit-search-cancel-button {
-	appearance: none;
+    appearance: none;
 }
 
 .search-form .btn-search {
-	border: none;
-	background-color: var(--primary-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
 }
 
 .btn-search i {
-	font-size: 2rem;
-	color: #fff;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar .fa-bars.active + .menu {
+    display: none;
 }
 
 /* *************        ************* */
@@ -364,18 +373,6 @@ html {
 }
 }
 /****************  **************/
-/********  CUCHILLOS	 ********/
-/****************  *************/
-
-.card-knifes{
-	
-}
-
-
-
-
-
-/****************  **************/
 /********  SOBRE NOSOTROS *******/
 /****************  **************/
 .Owner{
@@ -453,22 +450,7 @@ html {
 }.card:hover .back{
 	transform: perspective(500px) rotateY(360deg);
 }
-@media (max-width: 768px){
-	.cont {
-        overflow-x: auto; /* Añadir para permitir desplazamiento horizontal */
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Para Firefox */
-        padding-top: 60px;
-    }
-    .cont::-webkit-scrollbar {
-        display: none; /* Ocultar el scrollbar en webkit */
-    }
-    .card {
-        scroll-snap-align: center; /* Asegurar que las tarjetas se alineen en el centro */
-    
-}
-}
+
 /****************  **************/
 /********    REGISTRO	  *******/
 /****************  **************/
@@ -564,23 +546,7 @@ html {
 }
 
 @media (max-width: 768px) {
-    .cont_register {
-        display: flex;
-        flex-direction: row; /* Mantener filas horizontales en el contenedor */
-		justify-content: center;
-        overflow-x: auto; /* Permitir desplazamiento horizontal */
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-    }
-    .cont_register::-webkit-scrollbar {
-        display: none; /* Ocultar el scrollbar en webkit */
-    }
-    .abeas, form {
-        width: 100%;
-        max-width: 300px;
-        flex: 0 0 300px; /* Mantener tamaño fijo en responsive */
-        scroll-snap-align: center; /* Asegurar que se alinee en el centro al desplazarse */
-    }
+    
 }
 /**********************************/
 /********     FOOTER     **********/
@@ -656,4 +622,207 @@ html {
 	opacity: 1;
 }
   
+/**********************************/
+/*******    RESPONSIVE    *********/
+/**********************************/
 
+@media(max-width:1024px){
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.hero {
+	flex-direction: column;
+	align-items: center;
+}
+.customer-support, .container-logo, .container-user {
+	margin-bottom: 1rem;
+}
+.container-logo h1 a {
+	font-size: 2.5rem;
+}
+
+/* *************        ************* */
+/*               NAVBAR               */
+/* *************        ************* */
+.navbar {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.navbar .fa-bars {
+	display: block;
+	font-size: 2rem;
+	color: #fff;
+	cursor: pointer;
+}
+.menu {
+	display: none; /* Ocultamos el menú en pantallas pequeñas */
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+	background-color: var(--primary-color);
+}
+.menu li {
+	text-align: center;
+	width: 100%;
+}
+.menu a {
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+.search-form {
+	width: 50%; /* Ajusta el ancho al 100% del contenedor */
+	margin-top: 1rem;
+	height: 3rem; /* Mantén la altura ajustada */
+}
+.search-form input {
+	width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+	padding: 0.5rem; /* Ajusta el padding para mejor proporción */
+}
+.search-form .btn-search {
+	padding: 0 1rem; /* Mantén el padding ajustado */
+}
+
+/* *************        ************* */
+/*               BANNER               */
+/* *************        ************* */
+
+
+/* *************        ************* */
+/*             CATEGORIAS             */
+/* *************        ************* */
+
+
+/****************        **************/
+/*******     SOBRE NOSOTROS      ******/
+/**********                    ********/
+.cont {
+	overflow-x: auto; /* Añadir para permitir desplazamiento horizontal */
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+	padding-top: 60px;
+	justify-content: flex-start;
+}
+.cont::-webkit-scrollbar {
+	display: none; /* Ocultar el scrollbar en webkit */
+}
+.card {
+	flex: 0 0 50%; 
+	margin-right: 20px;
+
+}
+}
+
+@media(max-width:768px){
+/* *************        ************* */
+/*               HEADER               */
+/* *************        ************* */
+.hero {
+	padding: 1rem 0;
+}
+.customer-support {
+	gap: 1rem;
+}
+.container-logo h1 a {
+	font-size: 2rem;
+}
+.container-logo i, .customer-support i, .container-user .fa-user, .container-user .fa-basket-shopping {
+	font-size: 2.5rem;
+}
+
+/* *************        ************* */
+/*               NAVBAR               */
+/* *************        ************* */
+.navbar .fa-bars {
+	display: block;
+}
+.menu {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	background-color: var(--primary-color);
+}
+.search-form {
+	width: 50%; /* Ajusta el ancho al 100% del contenedor */
+	margin-top: 1rem;
+	max-height: 3rem; 
+}
+.search-form input {
+	width: 100%; 
+	padding: 0.5rem; 
+}
+.search-form .btn-search {
+	padding: 0 1rem; 
+}
+/****************        **************/
+/*******     SOBRE NOSOTROS      ******/
+/**********                    ********/
+.cont {
+	overflow-x: auto; /* Añadir para permitir desplazamiento horizontal */
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+	padding-top: 60px;
+	justify-content: flex-start;
+}
+.cont::-webkit-scrollbar {
+	display: none; /* Ocultar el scrollbar en webkit */
+}
+.card {
+	flex: 0 0 auto; 
+	margin-right: 20px;
+
+}
+/* *************        ************* */
+/*              REGISTRO              */
+/* *************        ************* */
+.cont_register {
+	display: flex;
+	flex-direction: row; /* Mantener filas horizontales en el contenedor */
+	justify-content: center;
+	overflow-x: auto; /* Permitir desplazamiento horizontal */
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+}
+.cont_register::-webkit-scrollbar {
+	display: none; /* Ocultar el scrollbar en webkit */
+}
+.abeas, form {
+	width: 100%;
+	max-width: 300px;
+	flex: 0 0 300px; /* Mantener tamaño fijo en responsive */
+	scroll-snap-align: center; /* Asegurar que se alinee en el centro al desplazarse */
+}
+}
+@media(max-width:480px){
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.hero {
+	padding: 0.5rem 0;
+}
+.customer-support {
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.container-logo, .container-user {
+	flex-direction: column;
+	align-items: center;
+}
+.container-logo h1 a {
+	font-size: 1.5rem;
+}
+.container-logo i, .customer-support i, .container-user .fa-user, .container-user .fa-basket-shopping {
+	font-size: 2rem;
+}
+
+/* *************        ************* */
+/*               NAVBAR               */
+/* *************        ************* */
+
+
+/****************        **************/
+/*******     SOBRE NOSOTROS      ******/
+/**********                    ********/
+}
