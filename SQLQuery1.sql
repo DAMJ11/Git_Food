@@ -123,3 +123,96 @@ select * from CUCHILLOS
 insert into CUCHILLOS (ID_Cuchillo,Nombre_Cuchillo,Descripcion_Cuchillo,Tipo_Cuchillo,Material_Hoja,Material_Mango,Longitud_Hoja,Peso_cuchillo,Precio_Cuchillo,Marca_Cuchillo) values
 (001,'Cuchillo de chef multiusos','Cuchillo de chef de 8 in de acero inoxid','cuchillo de chef','acero inoxidable','madera de Pakka',25,69,179.260,'imarku'),
 (002,'Paudin Cuchillo de chef','Paudin Cuchillo de chef de acero inoxid','cuchillo de chef','acero inoxidable','madera',25,69,143399,'paudin'),
+
+-- crear un procedimiento para insertar registros en la tabla RECETAS
+
+select * from RECETAS
+-- aun no se ejecuta
+create proc insertar_recetas  
+@idRecetas int,
+@nombreRecetas varchar (50),
+@descripcionRecetas varchar(100),
+@ingredientesRecetas varchar (max),
+@cantidadesRecetas varchar (max),
+@instruccionesRecetas varchar (max),
+@tiempoRecetas varchar (20),
+@porcionesRecetas smallint,
+@dificultadRecetas smallint,
+@categoriaRecetas varchar (20),
+@origenRecetas varchar (30)
+as
+insert into RECETAS(Id_Recetas,Nombre_recetas,Descripcion_Recetas,Ingredientes_Recetas,Cantidades_Recetas,Instrucciones_Recetas,Tiempo_Recetas,Porciones_Recetas,Dificultad_Recetas,Categoria_Recetas,Origen_Recetas)
+
+
+--procedimiento almacenado para la tabla usuario
+
+select* from USUARIO
+--aun no se ejecuta
+create proc insertar_usuario
+@idUsuario int,
+@nombreUsuario varchar (50),
+@correoUsuario varchar (50),
+@contraseñaUsuario varchar (15),
+as
+insert into USUARIO(ID_Usuario,Nombre_Usuario,Correo_Usuario,Contraseña_Usuario) values(@idUsuario,@nombreUsuario,@correoUsuario,@contraseñaUsuario)
+
+
+--insercion de registros a manera de codigo vivo
+select * from RECETAS
+exec insertar_recetas 001, 'Bruschetta de Tomate y Albahaca', 'Tostadas de pan crujientes cubiertas con tomate fresco, albahaca y ajo.', 'Pan, Tomates, Albahaca, Ajo, Aceite de oliva, Sal, Pimienta', '4 rebanadas de pan, 2 tomates, 1/2 taza de albahaca, 1 diente de ajo, 2 cucharadas de aceite de oliva, al gusto', 'Tostar el pan. Cortar los tomates en cubos y mezclar con la albahaca, el ajo, el aceite de oliva, la sal y la pimienta. Colocar la mezcla sobre el pan tostado.', '15 minutos', 2, 1, 'Aperitivo', 'Italiana'
+
+--se requiere crear un procedimiento almacenado que modifique datos en la tabla usuario
+select * from USUARIO
+-- aun no se ejecuta
+create proc modificar_usuario
+@idUsuario int,
+@nombreUsuario varchar (50),
+@correoUusuario varchar (50),
+@contraseñaUsuario varchar (15)
+as
+update USUARIO set Nombre_Usuario=@nombreUsuario, Correo_Usuario=@correoUusuario where ID_Usuario=@idUsuario
+
+--se requiere crear un procediminero que modifique datos en la tabla recetas
+--aun no se ejecuta
+exec insertar_recetas 002, 'Guacamole', 'Dip cremoso hecho con aguacate, cebolla, cilantro, jugo de limón y especias.', 'Aguacate, Cebolla, Cilantro, Jugo de limón, Sal, Pimienta', '2 aguacates, 1/2 cebolla, 1/4 taza de cilantro, 2 cucharadas de jugo de limón, al gusto', 'Machacar el aguacate con un tenedor. Agregar la cebolla picada, el cilantro, el jugo de limón, la sal y la pimienta. Mezclar bien.', '10 minutos', 4, 1, 'Aperitivo', 'Mexicana'
+
+--se requiere realizar una consulta de un registro especifico en la tabla usuario
+--aun no se ejecuta
+create proc consultarIdUsuario
+@idUsuario int,
+as
+select*from USUARIO where ID_Usuario=@idUsuario
+
+--se requiere crear un procedimiento almacenado donde elimine un registro especifico
+--aun no se ejecuta
+ select * from USUARIO
+create proc eliminarregistro
+@eliminarNombreUsuario varchar (50)
+as
+delete from USUARIO where Nombre_Usuario=@eliminarNombreUsuario
+
+--procedimiento para saber cuantos nombre de usuarios hay
+--aun no se ejecuta
+create proc cantidad_NombreUsuarios
+@cantidadNombreUsuarios int output
+as
+select @cantidadNombreUsuarios=count(Nombre_Usuario)from USUARIO
+
+--se requiere generar un informe sobre una receta x donde indique el nombre del dueño, el tiempo que demora y los comentarios que tiene--
+
+select *from RECETAS
+select *from USUARIO
+select*from COMENTARIOS
+
+create proc consulta
+@nombreReceta varchar (50)
+as
+select  from RECETAS 
+inner join  
+on  
+inner join
+on
+inner join
+on
+inner join
+on 
