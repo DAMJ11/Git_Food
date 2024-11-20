@@ -16,7 +16,15 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 }
-
+body {
+    background-image: url('/Imagenes/bg-home-100-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; /* Centra la imagen en el body */
+    height: 100%;
+    margin: 0;
+	z-index: 0;
+}
 /* ********************************** */
 /*             UTILIDADES             */
 /* ********************************** */
@@ -312,6 +320,7 @@ html {
 					top: -80px;
 				}
 				p{
+					color: #fff;
 					font-weight: 700;
 					font-size: 18px;
 				}
@@ -319,29 +328,29 @@ html {
 			.entrance{
 				background: radial-gradient(
 					circle,
-					#bfda7115 0%,
-					#dbf11215 100%
+					#606d3a48 0%,
+					#1a1d02fb 100%
 				);
 			}
 			.main-course{
 				background: radial-gradient(
 					circle,
-					#f0161615 0%,
-					#f0aa1315 100%
+					#f016163d 0%,
+					#1a1202 100%
 				);
 			}
 			.garrison{
 				background: radial-gradient(
 					circle,
-					#0e690215 0%,
-					#08a34915 100%
+					#000000 0%,
+					#013a197a 100%
 				);
 			}
 			.dessert{
 				background: radial-gradient(
 					circle,
-					#946f0b15 0%,
-					#53330915 100%
+					#946f0b70 0%,
+					#241604 100%
 				);
 			}
 	}
@@ -411,10 +420,11 @@ html {
 
 	h1{
 		font-size: 18px;
+		color: #ffffff;
 	}
 	.profesion{
 		font-size: 16px;
-		color: #949494;
+		color: #ffffff;
 		padding: 8px;
 	}
 	img{
@@ -429,14 +439,15 @@ html {
 		font-size: 12px;
 		text-align: center;
 		line-height: 22px;
+		color: #ffffff;
 	}
 }
 .card .front{
-	background:#346ea315 100%;
+	background:#363434 80% ;
 	transform: perspective(500px) rotateY(0deg);
 }
 .card .back{
-	background: #848dbe;
+	background: #363a4e;
 	transform: perspective(500px) rotateY(180deg);
 }
 .card:hover .front{
