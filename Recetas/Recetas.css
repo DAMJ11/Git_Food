@@ -241,7 +241,7 @@ html {
 /* *************        ************* */
 .cont-cat{
     display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 4 columnas */
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
       grid-template-rows: repeat(1, 1fr); /* 2 filas */
       margin-bottom: 100px;
       gap: 40px; /* Espacio entre las tarjetas */

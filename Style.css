@@ -34,11 +34,6 @@ html {
 /* ********************************** */
 /*               HEADER               */
 /* ********************************** */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 .container-hero {
     background-color: var(--background-color);
@@ -457,6 +452,7 @@ html {
 .cont-register{
 display: flex;
 flex-direction: row;
+justify-content: center;
 }
 
 :root {
@@ -466,10 +462,10 @@ flex-direction: row;
     --light-pink: #e882e8;
     --image-bg:  #eadbff ;
 }
-.login-container {
+.login-container ,.register-container{
     height: 44em;
     width: 60em;
-    margin: 6em auto;
+    margin: 6em ;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -573,7 +569,7 @@ flex-direction: row;
     color: white;
     border: none;
     border-radius: 5px;
-    background-color: var(--button-bg);
+    background-color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -582,19 +578,11 @@ flex-direction: row;
 }
 
 .span {
-    color: var(--light-pink);
+    color: var(--primary-color);
     font-weight: 600;
     cursor: pointer;
 }
-.register-container{
-	height: 43.75em;
-    width: 60em;
-    margin: 6em auto;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-}
+
 /**********************************/
 /********     FOOTER     **********/
 /**********************************/
