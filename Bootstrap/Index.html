@@ -1,38 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git-Food</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Style.css">
+    <title>GIT-FOOD</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
-    <main>
     <header>
         <div class="container-hero">
-            <div class="container hero">
+            <div class="hero container">
                 <div class="customer-support">
-                    <!--<i class="fa-solid fa-headset"></i>
-                    <div class="content-customer-support">
-                        <span class="text">Soporte al usuario</span>
-                    </div>-->
                 </div>
-
                 <div class="container-logo">
-                    <i class="fa-solid fa-mug-hot"></i>
                     <h1 class="logo"><a href="/">GIT-FOOD</a></h1>
                 </div>
-
                 <div class="container-user">
                     <i class="fa-solid fa-user"></i>
-                    <!--<i class="fa-solid fa-basket-shopping"></i>
-                    <div class="content-shopping-cart">
-                        <span class="text">Carrito</span>
-                        <span class="number">(0)</span>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -40,12 +26,11 @@
             <nav class="navbar container">
                 <i class="fa-solid fa-bars"></i>
                 <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="/Recetas/Recetas.html">Recetas</a></li>
+                    <li><a href="/Bootstrap/Index.html">Inicio</a></li>
+                    <li><a href="/Bootstrap/Recetas.html">Recetas</a></li>
                 </ul>
-
                 <form class="search-form">
-                    <input type="search" placeholder="Buscar..." />
+                    <input type="search" placeholder="Buscar..." class="form-control" />
                     <button class="btn-search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -58,36 +43,36 @@
             <p>Recetas Deliciosas</p>
             <h2>Creadas <br/>Para Deleitar</h2>
         </div>
-    </section>
-
+    </section>  
     <section class="container section-categories">
         <div class="header">
             <h2>Recetas</h2>
-            <a href="#" class="btn-all-categories">
+            <a href="/Bootstrap/Recetas.html" class="btn btn-primary btn-all-categories">
                 Ver todas las recetas
             </a>
         </div>
         <div class="list-card-categories">
+            <!-- Sección 1 -->
             <div class="card-categori entrance">
-                <img src="./Recetas/Imagenes_Recetas/Entrada_Empanada.jpg" alt="Icono Entrada">
-                <a href="./Recetas/Entradas/Entradas.html"><p>Entradas</p></a>
+                <img src="/Recetas/Imagenes_Recetas/Bruschetta_de_Tomate_y_Albahaca.jpg" alt="Icono Entrada">
+                <a href="/Bootstrap/Entradas.html"><p>Entradas</p></a>
             </div>
             <div class="card-categori main-course">
-                <img src="./Recetas/Imagenes_Recetas/Pollo_Al_Limon.jpg" alt="Icono Plato Fuerte">
-                <a href="./Recetas/Plato_Fuerte/Plato_Fuerte.html"><p>Plato Fuerte</p></a>
+                <img src="/Recetas/Imagenes_Recetas/Pollo_Al_Limon.jpg" alt="Icono Plato Fuerte">
+                <a href="/Bootstrap/Plato_Fuerte.html"><p>Plato Fuerte</p></a>
             </div>
             <div class="card-categori garrison">
-                <img src="./Recetas/Imagenes_Recetas/Puré_de_Papas.jpg" alt="Icono Guarnicion">
-                <a href="./Recetas/Guarniciones/Guarniciones.html"><p>Guarnicion</p></a>
+                <img src="/Recetas/Imagenes_Recetas/Puré_de_Papas.jpg" alt="Icono Guarnicion">
+                <a href="/Bootstrap/Guarnicion.html"><p>Guarnicion</p></a>
             </div>
+            <!-- Sección 2 -->
             <div class="card-categori dessert">
-                <img src="./Recetas/Imagenes_Recetas/Flan_de_Caramelo.jpg" alt="Icono Postre">
-                <a href="./Recetas/Postres/Postres.html"><p>Postre</p></a>
+                <img src="/Recetas/Imagenes_Recetas/Flan_de_Caramelo.jpg" alt="Icono Postre">
+                <a href="/Bootstrap/Postre.html"><p>Postre</p></a>
             </div>
         </div>
     </section>
-
-    <section class="Owner"><!--Sobre Nosotros-->
+    <section class="container Owner">
         <div class="cont">
             <div class="card">
                 <div class="front">
@@ -142,10 +127,10 @@
             </div>
         </div>
     </section>
-        <section class="cont-register"><!--REGITRO-->
-            <div class="login-container">
-                <div class="login-info-container">
-                <h1 class="title">Inicia seccion</h1>
+    <section class="container cont-register">
+        <div class="login-container">
+            <div class="login-info-container">
+                <h1 class="title">Inicia sesión</h1>
                 <div class="social-login">
                     <div class="social-login-element">
                         <i class="fa-regular fa-envelope"></i>
@@ -159,43 +144,40 @@
                 <p>O</p>
                 <form class="inputs-container">
                     <input class="input" type="text" placeholder="Usuario">
-                    <input class="input" type="text" placeholder="Contraseña">
-                    <p>Olvidaste tu contraseña? <span class="span">Click</span></p>
-                        <button class="btn">Iniciar Seccion</button>
-                        <p>No tienes una cuenta? <span class="span">Reguistrese</span></p>
+                    <input class="input" type="password" placeholder="Contraseña">
+                    <p>Olvidaste tu contraseña? <span class="span">Haz clic aquí</span></p>
+                    <button class="btn">Iniciar sesión</button>
+                    <p>No tienes una cuenta? <span class="span">Regístrate</span></p>
                 </form>
-                </div>
-                <img class="image-container" src="images/login.svg" alt="">
             </div>
-            <div class="register-container">
-                <div class="login-info-container">
-                    <h1 class="title">registrarse</h1>
-                    <div class="social-login">
-                        <div class="social-login-element">
-                            <i class="fa-regular fa-envelope"></i>
-                            <span>Google</span>
-                        </div>
-                        <div class="social-login-element">
-                            <i class="fa-brands fa-instagram"></i>
-                            <span>Instagram</span>
-                        </div>
+            <img class="image-container" src="images/login.svg" alt="">
+        </div>
+        <div class="register-container">
+            <div class="login-info-container">
+                <h1 class="title">Registrarse</h1>
+                <div class="social-login">
+                    <div class="social-login-element">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Google</span>
                     </div>
-                    <p>O</p>
-                    <form class="inputs-container">
-                        <input class="input" type="text" placeholder="Email">
-                        <input class="input" type="text" placeholder="Usuario">
-                        <input class="input" type="text" placeholder="Contraseña">
-                        <p>Olvidaste tu contraseña? <span class="span">Cliquea Aqui</span></p>
-                        <button class="btn">Iniciar Seccion</button>
-                        <p>No tienes una cuenta? <span class="span">Reguistrese</span></p>
-                    </form>
+                    <div class="social-login-element">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </div>
                 </div>
-                    <img class="image-container" src="images/login.svg" alt="">
+                <p>O</p>
+                <form class="inputs-container">
+                    <input class="input" type="email" placeholder="Email">
+                    <input class="input" type="text" placeholder="Usuario">
+                    <input class="input" type="password" placeholder="Contraseña">
+                    <p>Olvidaste tu contraseña? <span class="span">Cliquea aquí</span></p>
+                    <button class="btn">Registrarse</button>
+                    <p>¿Ya tienes una cuenta? <span class="span">Inicia sesión</span></p>
+                </form>
             </div>
-            </div>
-        </section>   
-    </main>
-    <hr>
+            <img class="image-container" src="images/login.svg" alt="">
+        </div>
+    </section>
     <footer class="footer">
         <ul class="social-icon">
           <li class="icon-elem">
@@ -226,22 +208,20 @@
         </ul>
         <ul class="menu">
           <li class="menu-elem">
-            <a href="" class="menu-icon"> Inicio </a>
+            <a href="" class="menu-icon">Inicio</a>
           </li>
           <li class="menu-elem">
-            <a href="" class="menu-icon"> Equipo </a>
+            <a href="" class="menu-icon">Equipo</a>
           </li>
           <li class="menu-elem">
-            <a href="" class="menu-icon"> Contacto </a>
+            <a href="" class="menu-icon">Contacto</a>
           </li>
           <li class="menu-elem">
-            <a href="" class="menu-icon"> Video </a>
-          </li>
-          <li class="menu-elem">
-            <a href="" class="menu-icon"> Sobre Nosotros </a>
+            <a href="" class="menu-icon">Sobre Nosotros</a>
           </li>
         </ul>
         <p class="text">2024 | Git-Food Todos los derechos reservados</p>
-      </footer>
+    </footer>
+</body>
 </body>
 </html>

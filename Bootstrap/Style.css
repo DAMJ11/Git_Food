@@ -1,0 +1,204 @@
+.container-hero {
+    padding: 20px;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-logo i {
+    margin-right: 10px;
+}
+.container-navbar {
+    background-color: #f8f9fa;
+}
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.navbar .menu li {
+    margin: 0 10px;
+}
+.navbar .menu li a {
+    text-decoration: none;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+.btn-search {
+    background: none;
+    border: none;
+}
+.banner {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px 0;
+}
+.content-banner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.content-banner h2 {
+    font-size: 36px;
+}
+.section-categories {
+    margin: 50px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.list-card-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.card-categori {
+    flex: 0 0 23%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card-categori img {
+    width: 100%;
+    height: auto;
+}
+.card-categori p {
+    margin-top: 10px;
+}
+.Owner {
+    margin: 50px auto;
+}
+.cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.front h1, .front p {
+    text-align: center;
+}
+.back {
+    display: none;
+}
+.cont-register {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+.login-container, .register-container {
+    width: 45%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-info-container h1, .register-info-container h1 {
+    text-align: center;
+}
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.social-login-element {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.social-login-element i {
+    margin-right: 10px;
+}
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+.inputs-container .input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.inputs-container .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.span {
+    color: #007bff;
+    cursor: pointer;
+}
+.inputs-container p {
+    text-align: center;
+}
+.image-container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+.social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.icon-elem {
+    margin: 0 10px;
+}
+.icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-elem {
+    margin: 0 10px;
+}
+.menu-icon {
+    text-decoration: none;
+    color: #000;
+}
+.text {
+    margin-top: 20px;
+    color: #6c757d;
+}
